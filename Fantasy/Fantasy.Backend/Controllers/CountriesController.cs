@@ -17,7 +17,7 @@ namespace Fantasy.Backend.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAsync(Country country)
+        public async Task<IActionResult> GetAsync()
         {
             return Ok(await _context.Countries.ToListAsync());
         }
